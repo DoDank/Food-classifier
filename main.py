@@ -22,4 +22,4 @@ interface = gr.Interface(fn=predict_food,
                          description="Upload a food image to classify it into one of 21 categories.")
 
 # Launch the app
-interface.launch(server_name="0.0.0.0", server_port=8080)
+interface.launch(share=True)  # 'share=True' generates a public link to share the app
